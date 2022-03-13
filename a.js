@@ -1,13 +1,8 @@
-function a (){
-  let b = 1
-  return function(){
-    b += 1
-    return b 
-  }
+let a = "abcdefg"
+// let b = a.slice(1)
+function sort(str){
+  
+  return str.length>0 ? sort(str.slice(1)) + str[0] :""
 }
-let f = a()
-console.log(f())
-console.log(f())
-console.log(f())
-f = null
-console.log(f())
+let b = sort(a)
+console.log(b)
