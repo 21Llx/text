@@ -1,2 +1,4 @@
 this is t1 101608
 sourstree
+
+git push --set-upstream origin master
